@@ -1,0 +1,53 @@
+/* Jumbotron */
+.jumbotron {
+  padding-top: 6rem;
+  background-color: #e2edff;
+}
+
+.container .nav-item .nav-link:hover::after {
+  content: "";
+  color: white;
+  display: block;
+  border-bottom: 1px solid #e2edff;
+  margin: auto;
+  margin-bottom: -1px;
+}
+/* Gallery */
+#gallery {
+  background-color: #e2edff;
+}
+
+section {
+  padding-top: 5rem;
+}
+
+section .card-body .card-text {
+  text-align: center;
+}
+
+.jumbotron .lead span {
+  mix-blend-mode: color-burn;
+  color: rgb(0, 107, 207);
+}
+.navbar-nav .nav-item .btn {
+  color: #aeae;
+  text-transform: uppercase;
+  border: solid rgb(0, 0, 255);
+  background-color: rgb(0, 0, 255);
+  border-radius: 20px;
+  margin-left: -4px;
+}
+
+.navbar-nav .nav-item .btn:hover {
+  color: black;
+  background-color: rgb(0, 255, 0);
+  border: solid rgb(0, 255, 0);
+}
+
+footer p a {
+  text-decoration: none;
+}
+
+footer p a:hover {
+  border-bottom: 1px solid black;
+}
