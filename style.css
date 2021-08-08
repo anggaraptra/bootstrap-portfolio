@@ -49,5 +49,5 @@ footer p a {
 }
 
 footer p a:hover {
-  border-bottom: 2px solid rgb(255, 255, 255);
+  border-bottom: 0px solid rgb(255, 255, 255);
 }
