@@ -23,7 +23,7 @@
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-dark shadow fixed-top" style="background-color: #066ac7">
       <div class="container">
-        <a class="navbar-brand" href="#">My Portfolio</a>
+        <a class="navbar-brand" type="button" onclick="jam()">My Portfolio</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -42,7 +42,7 @@
               <a class="nav-link" href="#contact">Contact</a>
             </li>
             <li class="nav-item">
-              <a href="https://www.youtube.com/channel/UCKFOvyfaq4FyhRfnlAhwSFA" target="_blank" class="btn">Visit This</a>
+              <a href="https://www.youtube.com/channel/UCKFOvyfaq4FyhRfnlAhwSFA" target="_blank" class="btn"><b>Visit This</b></a>
             </li>
           </ul>
         </div>
@@ -52,10 +52,12 @@
 
     <!-- Jumbotron -->
     <section class="jumbotron text-center">
-      <img src="img/anggara.png" alt="My Foto" width="200" class="rounded-circle img-thumbnail" data-aos="zoom-out" data-aos-duration="1000" data-aos-delay="100" />
-      <div class="nama" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">
+      <img src="img/anggara.png" alt="My Foto" width="200" class="rounded-circle img-thumbnail shadow" data-aos="zoom-out" data-aos-duration="1000" data-aos-delay="800" />
+      <div data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">
         <h1 class="display-4">I Kadek Anggara Putra</h1>
-        <p class="lead"><span>PELAJAR</span></p>
+      </div>
+      <div class="nama" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="600">
+        <p class="lead" type="button" onclick="value()"><span>PELAJAR</span><a id="lain"></a></p>
       </div>
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
         <path
@@ -76,10 +78,10 @@
           </div>
         </div>
         <div class="row justify-content-center fs-5 text-center">
-          <div class="col-md-4" data-aos="fade-right" data-aos-duration="2000" data-aos-delay="50">
+          <div class="col-md-4" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="100">
             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Distinctio illum laboriosam tempora fuga praesentium? Consectetur ad perferendis fuga molestias ipsum eos consequuntur.</p>
           </div>
-          <div class="col-md-4" data-aos="fade-left" data-aos-duration="2000" data-aos-delay="50">
+          <div class="col-md-4" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="100">
             <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Expedita doloremque sed quaerat ipsa possimus dolores in ullam incidunt praesentium tempora? Minima aspernatur distinctio reiciendis iure?</p>
           </div>
         </div>
@@ -103,9 +105,9 @@
           </div>
         </div>
         <div class="row">
-          <div class="col-md-4 mb-3" data-aos="fade-up-right" data-aos-duration="1500" data-aos-delay="100">
+          <div class="col-md-4 mb-3" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
             <div class="card">
-              <img src="img/myyt.jpg" class="card-img-top" alt="" />
+              <img src="img/myyt.jpg" class="card-img-top" alt="Foto1" />
               <div class="card-body">
                 <p class="card-text">Silahkan Berkunjung</p>
               </div>
@@ -113,15 +115,15 @@
           </div>
           <div class="col-md-4 mb-3" data-aos="zoom-in" data-aos-duration="1000">
             <div class="card">
-              <img src="img/logo2.png" class="card-img-top" alt="" />
+              <img src="img/logo2.png" class="card-img-top" alt="Foto2" />
               <div class="card-body">
                 <p class="card-text">My Logo</p>
               </div>
             </div>
           </div>
-          <div class="col-md-4 mb-3" data-aos="fade-up-left" data-aos-duration="1500" data-aos-delay="100">
+          <div class="col-md-4 mb-3" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500">
             <div class="card">
-              <img src="img/Background.png" class="card-img-top" alt="" />
+              <img src="img/Background.png" class="card-img-top" alt="Foto3" />
               <div class="card-body">
                 <p class="card-text">Background</p>
               </div>
@@ -181,14 +183,21 @@
     <footer class="text-white text-center pb-5" style="background-color: #066ac7">
       <p>
         Created with <i class="bi bi-person-check-fill text-warning"></i> by
-        <a href="https://www.instagram.com/anggara.ptra/" target="_blank" class="text-white fw-bold" data-aos="fade-up" data-aos-delay="100" data-aos-duration="1000">AnggaraPutra</a>
+        <a href="https://www.instagram.com/anggara.ptra/" target="_blank" class="text-white fw-bold" data-aos="fade-up" data-aos-delay="50" data-aos-duration="1000">AnggaraPutra</a>
       </p>
       <p>Thank for Checking My Portfolio</p>
+      <p id="hallo"></p>
     </footer>
     <!-- Akhir Footer -->
 
     <!-- My Javascript -->
     <script>
+      function value() {
+        document.getElementById("lain").innerHTML = " | CONTENT CREATED";
+      }
+      function jam() {
+        document.getElementById("hallo").innerHTML = Date();
+      }
       function ini() {
         const nama = prompt("Siapa Namamu ... ?");
         alert(`Thank you ${nama}`);
