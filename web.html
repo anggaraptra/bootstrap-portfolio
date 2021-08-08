@@ -23,7 +23,7 @@
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-dark shadow fixed-top" style="background-color: #066ac7">
       <div class="container">
-        <a class="navbar-brand" href="#">MyPortfolio</a>
+        <a class="navbar-brand" href="#">My Portfolio</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -42,7 +42,7 @@
               <a class="nav-link" href="#contact">Contact</a>
             </li>
             <li class="nav-item">
-              <a href="https://www.youtube.com/channel/UCKFOvyfaq4FyhRfnlAhwSFA" target="_blank" class="nav-lin btn">Cek It</a>
+              <a href="https://www.youtube.com/channel/UCKFOvyfaq4FyhRfnlAhwSFA" target="_blank" class="btn">Check It</a>
             </li>
           </ul>
         </div>
@@ -52,9 +52,11 @@
 
     <!-- Jumbotron -->
     <section class="jumbotron text-center">
-      <img src="img/anggara.png" alt="My Foto" width="200" class="rounded-circle img-thumbnail" />
-      <h1 class="display-4">I Kadek Anggara Putra</h1>
-      <p class="lead"><span>PELAJAR</span></p>
+      <img src="img/anggara.png" alt="My Foto" width="200" class="rounded-circle img-thumbnail" data-aos="zoom-out" data-aos-duration="1000" data-aos-delay="100" />
+      <div class="nama" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">
+        <h1 class="display-4">I Kadek Anggara Putra</h1>
+        <p class="lead"><span>PELAJAR</span></p>
+      </div>
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
         <path
           fill="#ffffff"
@@ -74,10 +76,10 @@
           </div>
         </div>
         <div class="row justify-content-center fs-5 text-center">
-          <div class="col-md-4" data-aos="fade-right" data-aos-duration="3000" data-aos-delay="50">
+          <div class="col-md-4" data-aos="fade-right" data-aos-duration="2000" data-aos-delay="50">
             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Distinctio illum laboriosam tempora fuga praesentium? Consectetur ad perferendis fuga molestias ipsum eos consequuntur.</p>
           </div>
-          <div class="col-md-4" data-aos="fade-left" data-aos-duration="3000" data-aos-delay="300">
+          <div class="col-md-4" data-aos="fade-left" data-aos-duration="2000" data-aos-delay="50">
             <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Expedita doloremque sed quaerat ipsa possimus dolores in ullam incidunt praesentium tempora? Minima aspernatur distinctio reiciendis iure?</p>
           </div>
         </div>
@@ -101,25 +103,25 @@
           </div>
         </div>
         <div class="row">
-          <div class="col-md-4 mb-3">
+          <div class="col-md-4 mb-3" data-aos="fade-up-right" data-aos-duration="1500" data-aos-delay="100">
             <div class="card">
-              <img src="img/menkref.png" class="card-img-top" alt="Foto 1" />
+              <img src="img/myyt.jpg" class="card-img-top" alt="" />
               <div class="card-body">
                 <p class="card-text">.....</p>
               </div>
             </div>
           </div>
-          <div class="col-md-4 mb-3">
+          <div class="col-md-4 mb-3" data-aos="zoom-in" data-aos-duration="1000">
             <div class="card">
-              <img src="img/menkref 1.png" class="card-img-top" alt="Foto 1" />
+              <img src="img/logo2.png" class="card-img-top" alt="" />
               <div class="card-body">
                 <p class="card-text">.....</p>
               </div>
             </div>
           </div>
-          <div class="col-md-4 mb-3">
+          <div class="col-md-4 mb-3" data-aos="fade-up-left" data-aos-duration="1500" data-aos-delay="100">
             <div class="card">
-              <img src="img/menkref 2.png" class="card-img-top" alt="Foto 1" />
+              <img src="img/Background.png" class="card-img-top" alt="" />
               <div class="card-body">
                 <p class="card-text">.....</p>
               </div>
@@ -160,7 +162,7 @@
                 <label for="pesan" class="form-label">Pesan</label>
                 <textarea class="form-control" id="pesan" rows="3"></textarea>
               </div>
-              <button type="submit" class="btn btn-danger" id="submit">Kirim</button>
+              <button type="submit" class="btn btn-danger" id="submit" onclick="ini()">Kirim</button>
             </form>
           </div>
         </div>
@@ -177,17 +179,27 @@
 
     <!-- Footer -->
     <footer class="text-white text-center pb-5" style="background-color: #066ac7">
-      <p>Created with <i class="bi bi-person-check-fill text-warning"></i> by <a href="https://www.instagram.com/anggara.ptra/" target="_blank" class="text-white fw-bold">AnggaraPutra</a></p>
+      <p>
+        Created with <i class="bi bi-person-check-fill text-warning"></i> by
+        <a href="https://www.instagram.com/anggara.ptra/" target="_blank" class="text-white fw-bold" data-aos="fade-up" data-aos-delay="100" data-aos-duration="1000">AnggaraPutra</a>
+      </p>
       <p>Thank for Checking My Portfolio</p>
     </footer>
     <!-- Akhir Footer -->
+
+    <!-- My Javascript -->
+    <script>
+      function ini() {
+        const nama = prompt("Siapa Namamu ... ?");
+        alert(`Thank you ${nama}`);
+      }
+    </script>
 
     <!-- Javascript -->
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
       AOS.init();
     </script>
-
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
     <!-- Akhir Javascript -->
   </body>
