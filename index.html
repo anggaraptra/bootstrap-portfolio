@@ -57,7 +57,7 @@
         <h1 class="display-4">I Kadek Anggara Putra</h1>
       </div>
       <div class="nama" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="600">
-        <p class="lead" type="button" onclick="value()"><span>PELAJAR</span><a id="lain"></a></p>
+        <p class="lead" type="button" onclick="value()"><span>STUDENT</span><a id="lain"></a></p>
       </div>
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
         <path
@@ -109,7 +109,9 @@
             <div class="card">
               <img src="img/myyt.jpg" class="card-img-top" alt="Foto1" />
               <div class="card-body">
-                <p class="card-text">Silahkan Berkunjung</p>
+                <p class="card-text">
+                  <a href="https://www.youtube.com/channel/UCKFOvyfaq4FyhRfnlAhwSFA" target="_blank" style="text-decoration: none; color: black">Silahkan Berkunjung</a>
+                </p>
               </div>
             </div>
           </div>
@@ -121,7 +123,7 @@
               </div>
             </div>
           </div>
-          <div class="col-md-4 mb-3" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500">
+          <div class="col-md-4 mb-3" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
             <div class="card">
               <img src="img/Background.png" class="card-img-top" alt="Foto3" />
               <div class="card-body">
@@ -151,24 +153,32 @@
         </div>
         <div class="row justify-content-center">
           <div class="col-md-6">
-            <form id="myForm" onsubmit="return input()">
+            <div class="alert alert-success alert-dismissible fade show d-none my-alert" role="alert">
+              <strong>Thank you! <a id="namaOrang"></a></strong> Pesan anda sudah kami terima.
+              <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+            </div>
+            <form name="contact-form-myportfolio" id="myForm">
               <div class="mb-3">
-                <label for="name" class="form-label">Nama</label>
-                <input type="text" placeholder="Masukan nama" class="form-control" id="nama" aria-describedby="name" />
+                <label for="name" class="form-label">Name</label>
+                <input name="nama" type="text" placeholder="name" class="form-control" id="name" aria-describedby="name" />
               </div>
               <div class="mb-3">
                 <label for="email" class="form-label">Email</label>
-                <input type="text" placeholder="Masukan email" class="form-control" id="email" aria-describedby="email" />
+                <input name="email" type="email" placeholder="email" class="form-control" id="email" aria-describedby="email" />
               </div>
               <div class="mb-3">
-                <label for="noHandphone" class="form-label">No.Handphone</label>
-                <input type="number" placeholder="No.hp" class="form-control" id="nomer" aria-describedby="email" />
+                <label for="nomer" class="form-label">No.Handphone</label>
+                <input name="nomer" type="number" placeholder="no.hp" class="form-control" id="number" aria-describedby="email" />
               </div>
               <div class="mb-3">
-                <label for="pesan" class="form-label">Pesan</label>
-                <textarea placeholder="Pesan" class="form-control" rows="3" id="pesan"></textarea>
+                <label for="pesan" class="form-label">Message</label>
+                <textarea placeholder="message" class="form-control" rows="3" id="message" name="pesan"></textarea>
               </div>
-              <button type="submit" class="btn btn-danger" id="submit">Kirim</button>
+              <button type="submit" class="btn btn-success btn-kirim" id="submit">Send</button>
+              <button class="btn btn-success btn-loading d-none" type="button" disabled>
+                <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
+                Loading...
+              </button>
             </form>
           </div>
         </div>
@@ -189,7 +199,7 @@
         Created with <i class="bi bi-person-check-fill text-warning"></i> by
         <a href="https://www.instagram.com/anggara.ptra/" target="_blank" class="text-white fw-bold" data-aos="fade-up" data-aos-delay="50" data-aos-duration="1000">AnggaraPutra</a>
       </p>
-      <p>Thank for Checking My Portfolio</p>
+      <p>Thanks for Checking My Portfolio</p>
       <p id="hallo"></p>
     </footer>
     <!-- Akhir Footer -->
@@ -202,44 +212,31 @@
       function jam() {
         document.getElementById("hallo").innerHTML = Date();
       }
-      function input() {
-        const nama = document.getElementById("nama").value;
-        const email = document.getElementById("email").value;
-        const nomer = document.getElementById("nomer").value;
-        const pesan = document.getElementById("pesan").value;
-        let text;
-        // pesanEror.style.padding = "10px";
+      const scriptURL = "https://script.google.com/macros/s/AKfycbxCBuyn_RAlmO8PyjfsI72eURllaXvKLRYsFB9G3INdbvREu1idpRjCFLvaUILBLWPO/exec";
+      const form = document.forms["contact-form-myportfolio"];
+      const btnKirim = document.querySelector(".btn-kirim");
+      const btnLoading = document.querySelector(".btn-loading");
+      const alert = document.querySelector(".my-alert");
 
-        // bagian nama
-        if (nama.length < 1) {
-          text = "Masukan nama";
-          alert(text);
-          return false;
-        }
-
-        // bagian email
-        if (email.indexOf("@") == -1 || email.length < 6) {
-          text = "Masukan email yang valid";
-          alert(text);
-          return false;
-        }
-
-        // bagian nomer hp
-        if (isNaN(nomer) || nomer.length <= 12) {
-          text = "Masukan nomer yang valid";
-          alert(text);
-          return false;
-        }
-
-        // bagian pesan
-        if (pesan.length <= 10) {
-          text = "Masukan pesan lebih dari 10 karakter";
-          alert(text);
-          return false;
-        }
-        alert(`Thank you ${nama}`);
-        return true;
-      }
+      form.addEventListener("submit", (e) => {
+        e.preventDefault();
+        // ketika tombol submit diklik
+        // tampilkan tombol loading, hilangkan tombol kirim
+        btnLoading.classList.toggle("d-none");
+        btnKirim.classList.toggle("d-none");
+        fetch(scriptURL, { method: "POST", body: new FormData(form) })
+          .then((response) => {
+            // tampilkan tombol kirim, hilangkan tombol loading
+            btnLoading.classList.toggle("d-none");
+            btnKirim.classList.toggle("d-none");
+            // my alert
+            alert.classList.toggle("d-none");
+            // reset formnya
+            form.reset();
+            console.log("Success!", response);
+          })
+          .catch((error) => console.error("Error!", error.message));
+      });
     </script>
 
     <!-- Javascript -->

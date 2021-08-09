@@ -44,17 +44,6 @@ section .card-body .card-text {
   border: solid rgb(255, 255, 255);
 }
 
-/* #contact .container #pesanEror {
-  margin-bottom: 15px;
-  padding: 0px;
-  background-color: #e2edff;
-  text-align: center;
-  font-size: 14px;
-  margin-right: 284px;
-  margin-left: 284px;
-  transition: all 0.5 ease;
-} */
-
 footer p a {
   text-decoration: none;
 }
