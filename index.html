@@ -52,7 +52,7 @@
 
     <!-- Jumbotron -->
     <section class="jumbotron text-center">
-      <img src="img/anggara.png" alt="My Foto" width="200" class="rounded-circle img-thumbnail shadow" data-aos="zoom-out" data-aos-duration="1000" data-aos-delay="800" />
+      <img src="img/poto.png" alt="My Foto" width="200" class="rounded-circle img-thumbnail shadow" data-aos="zoom-out" data-aos-duration="1000" data-aos-delay="800" />
       <div data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">
         <h1 class="display-4">I Kadek Anggara Putra</h1>
       </div>
@@ -154,7 +154,7 @@
         <div class="row justify-content-center">
           <div class="col-md-6">
             <div class="alert alert-success alert-dismissible fade show d-none my-alert" role="alert">
-              <strong>Thank you! <a id="namaOrang"></a></strong> Pesan anda sudah kami terima.
+              <strong>Thank you!</strong> Pesan anda sudah kami terima.
               <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
             </div>
             <form name="contact-form-myportfolio" id="myForm">
@@ -174,7 +174,7 @@
                 <label for="pesan" class="form-label">Message</label>
                 <textarea placeholder="message" class="form-control" rows="3" id="message" name="pesan"></textarea>
               </div>
-              <button type="submit" class="btn btn-success btn-kirim" id="submit">Send</button>
+              <button type="submit" class="btn btn-danger btn-kirim" id="submit">Send</button>
               <button class="btn btn-success btn-loading d-none" type="button" disabled>
                 <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
                 Loading...
@@ -212,6 +212,8 @@
       function jam() {
         document.getElementById("hallo").innerHTML = Date();
       }
+
+      // fungsi untuk mengirimkan data ke google sheet
       const scriptURL = "https://script.google.com/macros/s/AKfycbxCBuyn_RAlmO8PyjfsI72eURllaXvKLRYsFB9G3INdbvREu1idpRjCFLvaUILBLWPO/exec";
       const form = document.forms["contact-form-myportfolio"];
       const btnKirim = document.querySelector(".btn-kirim");
