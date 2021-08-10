@@ -30,10 +30,10 @@ section .card-body .card-text {
   color: rgb(0, 107, 207);
 }
 .navbar-nav .nav-item .btn {
-  color: #bebebe;
+  color: #ffffff;
   text-transform: uppercase;
-  border: solid rgb(20, 20, 255);
-  background-color: rgb(20, 20, 255);
+  border: solid #dc3545;
+  background-color: #dc3545;
   border-radius: 20px;
   margin-left: 8px;
 }
@@ -42,6 +42,10 @@ section .card-body .card-text {
   color: rgb(0, 107, 207);
   background-color: rgb(255, 255, 255);
   border: solid rgb(255, 255, 255);
+}
+
+footer {
+  padding-top: 15px;
 }
 
 footer p a {
