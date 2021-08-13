@@ -52,11 +52,11 @@
 
     <!-- Jumbotron -->
     <section class="jumbotron text-center">
-      <img src="img/poto.png" alt="My Foto" width="200" class="rounded-circle img-thumbnail shadow" data-aos="zoom-out" data-aos-duration="1000" data-aos-delay="800" />
-      <div data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">
-        <h1 class="display-4">I Kadek Anggara Putra</h1>
+      <img src="img/poto.png" alt="My Foto" width="200" class="rounded-circle img-thumbnail shadow" />
+      <div>
+        <h1 class="display-4">Anggara Putra</h1>
       </div>
-      <div class="nama" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="600">
+      <div class="nama">
         <p class="lead" type="button" onclick="value()"><span>STUDENT</span><a id="lain"></a></p>
       </div>
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
@@ -174,7 +174,7 @@
                 <label for="pesan" class="form-label">Message</label>
                 <textarea placeholder="message" class="form-control" rows="3" id="message" name="pesan"></textarea>
               </div>
-              <button type="submit" class="btn btn-danger btn-kirim" id="submit">Send</button>
+              <button type="submit" class="btn btn-success btn-kirim" id="submit">Send</button>
               <button class="btn btn-success btn-loading d-none" type="button" disabled>
                 <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
                 Loading...
@@ -191,7 +191,7 @@
 
     <!-- Footer -->
     <footer class="text-white text-center pb-5" style="background-color: #2e4eff">
-      <p>
+      <p class="akunig">
         Created with <i class="bi bi-person-check-fill text-warning"></i> by
         <a href="https://www.instagram.com/anggara.ptra/" target="_blank" class="text-white fw-bold" data-aos="fade-up" data-aos-duration="1000">AnggaraPutra</a>
       </p>
@@ -241,11 +241,26 @@
     </script>
     <!-- Akhir My Javascript -->
 
-    <!-- Javascript Bootstrap -->
+    <!-- Javascript AOS -->
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
-      AOS.init();
+      AOS.init({
+        once: true,
+      });
     </script>
+    <!-- Akhir Javasrript AOS -->
+
+    <!-- Javascript GSAP -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/gsap.min.js"></script>
+    <script>
+      gsap.from(".navbar", { duration: 0.5, y: "-100%", opacity: 0 });
+      gsap.from(".img-thumbnail", { duration: 1, y: -100, opacity: 0, delay: 0.5, ease: "power4" });
+      gsap.from(".display-4", { duration: 1, x: 20, opacity: 0, delay: 1, ease: "back" });
+      gsap.from(".lead", { duration: 1, x: -20, opacity: 0, delay: 1, ease: "back" });
+    </script>
+    <!-- Akhir Javascript GSAP -->
+
+    <!-- Javascript Bootstrap -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
     <!-- Akhir Javascript Bootstrap -->
   </body>
