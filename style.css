@@ -21,11 +21,10 @@
 
 .navbar-nav .nav-item .btn {
   color: #ffffff;
-  text-transform: uppercase;
   border: solid #198754;
   background-color: #198754;
   border-radius: 20px;
-  margin-left: 7px;
+  margin-left: -2px;
 }
 
 .navbar-nav .nav-item .btn:hover {
