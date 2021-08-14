@@ -14,21 +14,22 @@
   content: "";
   color: rgb(255, 255, 255);
   display: block;
-  border-bottom: 0px solid rgb(255, 255, 255);
+  border-bottom: 2px solid #0dcaf0;
+  border-radius: 45%;
   margin: auto;
-  margin-bottom: -0px;
+  margin-bottom: -2px;
 }
 
 .navbar-nav .nav-item .btn {
   color: #ffffff;
-  border: solid #198754;
-  background-color: #198754;
+  border: solid #6c757d;
+  background-color: #6c757d;
   border-radius: 20px;
   margin-left: -2px;
 }
 
 .navbar-nav .nav-item .btn:hover {
-  color: rgb(0, 107, 207);
+  color: #0dcaf0;
   background-color: rgb(255, 255, 255);
   border: solid rgb(255, 255, 255);
 }
@@ -54,8 +55,12 @@ footer {
 
 footer p a {
   text-decoration: none;
+  color: white;
 }
 
 footer p a:hover {
+  color: #0dcaf0;
   text-shadow: 1px 1px 3px black;
 }
+/* color navbar default */
+/* #2e4eff */
