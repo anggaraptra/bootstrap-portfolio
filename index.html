@@ -114,7 +114,7 @@
             <div class="card">
               <img src="img/logo2.png" class="card-img-top" alt="Foto2" />
               <div class="card-body">
-                <p class="card-text">My Logo</p>
+                <p class="card-text">Logo</p>
               </div>
             </div>
           </div>
@@ -149,7 +149,7 @@
         <div class="row justify-content-center">
           <div class="col-md-6">
             <div class="alert alert-info alert-dismissible fade show d-none my-alert" role="alert">
-              <strong>Thank you |</strong> Pesan anda sudah kami terima.
+              <strong>Thank you |</strong> Pesan anda sudah kami terima!
               <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
             </div>
             <form name="contact-form-myportfolio" id="myForm">
@@ -199,7 +199,8 @@
     <script>
       // menambahkan fungsi untuk menampilkan tulisan ketika diklik
       function value() {
-        document.getElementById("status").innerHTML = " | CONTENT CREATED";
+        const status = document.getElementById("status");
+        status.innerHTML = " | CONTENT CREATED";
       }
 
       // menampilkan waktu, posisi ada di bagian footer
