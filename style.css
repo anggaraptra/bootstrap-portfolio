@@ -14,25 +14,39 @@
   content: "";
   color: rgb(255, 255, 255);
   display: block;
-  border-bottom: 2px solid #0dcaf0;
-  border-radius: 45%;
+  /* border-bottom: 2px solid #0dcaf0;
+  border-radius: 45%; */
   margin: auto;
-  margin-bottom: -2px;
+  margin-bottom: 0px;
 }
 
-/* .navbar-nav .nav-item .btn {
+/* Button 1 */
+.navbar-nav .nav-item .btn.button1 {
+  color: #ffffff;
+  border: solid #0dcaf0;
+  background-color: #0dcaf0;
+  border-radius: 20px;
+  margin-left: 5px;
+}
+.navbar-nav .nav-item .btn.button1:hover {
+  color: black;
+  background-color: rgb(255, 255, 255);
+  border: solid rgb(255, 255, 255);
+}
+
+/* Button2 */
+.navbar-nav .nav-item .btn.button2 {
   color: #ffffff;
   border: solid #6c757d;
   background-color: #6c757d;
   border-radius: 20px;
-  margin-left: -2px;
+  margin-left: 10px;
 }
-
-.navbar-nav .nav-item .btn:hover {
-  color: #0dcaf0;
+.navbar-nav .nav-item .btn.button2:hover {
+  color: #3b3b3b;
   background-color: rgb(255, 255, 255);
   border: solid rgb(255, 255, 255);
-} */
+}
 
 /* Gallery */
 #gallery {
@@ -61,6 +75,10 @@ footer p a {
 footer p a:hover {
   color: #0dcaf0;
   text-shadow: 1px 1px 3px black;
+}
+
+.modal .modal-dialog .modal-content img {
+  margin: auto;
 }
 /* color navbar default */
 /* #2e4eff */
