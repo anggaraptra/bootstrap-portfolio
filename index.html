@@ -23,23 +23,23 @@
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-dark shadow-sm fixed-top acakWarna1" style="background-color: #3b3b3b">
       <div class="container">
-        <a class="navbar-brand" type="button" onclick="jam()">My Portfolio</a>
+        <a class="navbar-brand" type="button" onclick="jam()">PORTFOLIO</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav ms-auto">
             <li class="nav-item">
-              <a class="nav-link" aria-current="page" href="#home">Home</a>
+              <a class="nav-link" aria-current="page" href="#home">HOME</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#about">About</a>
+              <a class="nav-link" href="#about">ABOUT</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#gallery">Gallery</a>
+              <a class="nav-link" href="#gallery">GALLERY</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#contact">Contact</a>
+              <a class="nav-link" href="#contact">CONTACT</a>
             </li>
             <li class="nav-item">
               <a class="btn button1">Random</a>
@@ -73,7 +73,7 @@
       <div class="container">
         <div class="row text-center mb-4">
           <div class="col">
-            <h2>About Me</h2>
+            <h2>ABOUT</h2>
           </div>
         </div>
         <div class="row justify-content-center fs-5 text-center">
@@ -81,7 +81,7 @@
             <p>Tidak banyak yang bisa saya sampaikan, ini beberapa tentang saya. Mungkin beberapa yang saya sampaikan tidak sesuai dengan apa yang saya dan anda harapkan. Enjoy Scrolling</p>
           </div>
           <div class="col-md-4" data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="100">
-            <p>Perkenalkan nama saya Anggara, saya adalah seorang siswa. SEKIAN (Jika anda kesal, SILAHKAN)</p>
+            <p>Perkenalkan nama saya Anggara, saya adalah seorang siswa.</p>
           </div>
         </div>
       </div>
@@ -100,7 +100,7 @@
       <div class="container">
         <div class="row text-center mb-4">
           <div class="col">
-            <h2>Gallery</h2>
+            <h2>GALLERY</h2>
           </div>
         </div>
         <div class="row">
@@ -148,7 +148,7 @@
       <div class="modal-dialog">
         <div class="modal-content">
           <div class="modal-header">
-            <h5 class="modal-title" id="exampleModalLabel">My Youtube Channel</h5>
+            <h5 class="modal-title" id="exampleModalLabel">Youtube Channel</h5>
             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
           </div>
           <img src="img/YT.jpg" width="490px" height="250px" alt="" />
@@ -195,7 +195,7 @@
       <div class="container pb-5">
         <div class="row text-center mb-3">
           <div class="col">
-            <h2>Contact</h2>
+            <h2>CONTACT</h2>
           </div>
         </div>
         <div class="row justify-content-center">
@@ -287,6 +287,8 @@
       // Fungsi mengacak warna navbar
       const acak1 = document.querySelector(".acakWarna1");
       const acak2 = document.querySelector(".acakWarna2");
+      const acakTombol1 = document.querySelector(".button1");
+      const acakTombol2 = document.querySelector(".button2");
       const tombol1 = document.querySelector(".button1");
 
       tombol1.addEventListener("click", function () {
@@ -297,11 +299,21 @@
         acak2.style.backgroundColor = "rgb(" + r + "," + g + "," + b + ")";
       });
 
+      tombol1.addEventListener("click", function () {
+        const r = Math.round(Math.random() * 255 + 1);
+        const g = Math.round(Math.random() * 255 + 1);
+        const b = Math.round(Math.random() * 255 + 1);
+        acakTombol1.style.backgroundColor = "rgb(" + r + "," + g + "," + b + ")";
+        acakTombol2.style.backgroundColor = "rgb(" + r + "," + g + "," + b + ")";
+      });
+
       // Fungsi mengembalikan warna navbar ke semula
       const tombol2 = document.querySelector(".button2");
       tombol2.addEventListener("click", function () {
         acak1.style.backgroundColor = "#3b3b3b";
         acak2.style.backgroundColor = "#3b3b3b";
+        acakTombol1.style.backgroundColor = "#6c757d";
+        acakTombol2.style.backgroundColor = "#6c757d";
       });
     </script>
     <!-- Akhir My Javascript -->

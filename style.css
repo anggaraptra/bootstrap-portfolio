@@ -22,30 +22,36 @@
 
 /* Button 1 */
 .navbar-nav .nav-item .btn.button1 {
-  color: #ffffff;
-  border: solid #0dcaf0;
-  background-color: #0dcaf0;
-  border-radius: 20px;
-  margin-left: -1px;
+  color: #ffff;
+  background-color: #6c757d;
+  overflow: hidden;
+  transition: 0.2s;
+  padding: -10px;
+  border-radius: 10px;
+  margin-top: 1px;
+  margin-left: 5px;
 }
 .navbar-nav .nav-item .btn.button1:hover {
-  color: black;
-  background-color: rgb(255, 255, 255);
-  border: solid rgb(255, 255, 255);
+  color: #ffff;
+  background: #6c757d;
+  /* box-shadow: 0 0 10px #ffff, 0 0 10px #ffff, 0 0 20px #ffff; */
+  /* background-color: rgb(255, 255, 255); */
+  /* border: solid rgb(255, 255, 255); */
 }
 
 /* Button2 */
 .navbar-nav .nav-item .btn.button2 {
   color: #ffffff;
-  border: solid #6c757d;
   background-color: #6c757d;
-  border-radius: 20px;
-  margin-left: 5px;
+  padding: -10px;
+  border-radius: 10px;
+  margin-top: 1px;
+  margin-left: 11.5px;
 }
 .navbar-nav .nav-item .btn.button2:hover {
-  color: #3b3b3b;
-  background-color: rgb(255, 255, 255);
-  border: solid rgb(255, 255, 255);
+  color: #ffff;
+  background: #6c757d;
+  /* box-shadow: 0 0 10px #ffff, 0 0 10px #ffff, 0 0 20px #ffff; */
 }
 
 /* Gallery */
