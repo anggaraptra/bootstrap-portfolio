@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>My Portfolio | Anggara Putra</title>
+    <title>Portfolio | Anggara Putra</title>
     <!-- Required meta tags -->
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -51,13 +51,12 @@
         </div>
       </div>
     </nav>
-    <!-- Akhir Navbar -->
 
     <!-- Jumbotron -->
     <section class="jumbotron text-center">
       <img src="img/anggaraptra.png" alt="My Foto" width="200" class="rounded-circle img-thumbnail shadow" />
       <div>
-        <h1 class="display-4">Anggara Putra</h1>
+        <h1 class="display-4">ANGGARA PUTRA</h1>
       </div>
       <div class="nama">
         <p class="lead" type="button" onclick="value()"><span>STUDENT</span><a id="status"></a></p>
@@ -66,7 +65,6 @@
         <path fill="#ffffff" fill-opacity="1" d="M0,224L120,202.7C240,181,480,139,720,138.7C960,139,1200,181,1320,202.7L1440,224L1440,320L1320,320C1200,320,960,320,720,320C480,320,240,320,120,320L0,320Z"></path>
       </svg>
     </section>
-    <!-- Akhir Jumbotron -->
 
     <!-- About -->
     <section id="about">
@@ -93,7 +91,6 @@
         ></path>
       </svg>
     </section>
-    <!-- Akhir About -->
 
     <!-- Gallery -->
     <section id="gallery">
@@ -140,7 +137,6 @@
         ></path>
       </svg>
     </section>
-    <!-- Akhir Gallery -->
 
     <!-- Pop Up Gallery -->
     <!--MyYoutube-->
@@ -188,7 +184,6 @@
         </div>
       </div>
     </div>
-    <!-- Akhir Pop Up Gallery -->
 
     <!-- Contact -->
     <section id="contact">
@@ -231,7 +226,6 @@
         </div>
       </div>
     </section>
-    <!-- Akhir Contact -->
 
     <!-- Footer -->
     <footer class="text-white text-center pb-5 pt-5 acakWarna2" style="background-color: #3b3b3b">
@@ -242,81 +236,9 @@
       <p>Thanks for Checking |<b> Copyright @2021</b></p>
       <p id="jam"></p>
     </footer>
-    <!-- Akhir Footer -->
 
     <!-- My Javascript -->
-    <script>
-      // menambahkan fungsi untuk menampilkan tulisan ketika diklik
-      function value() {
-        const status = document.getElementById("status");
-        status.innerHTML = " | CONTENT CREATED";
-      }
-
-      // menampilkan waktu, posisi ada di bagian footer
-      function jam() {
-        document.getElementById("jam").innerHTML = Date();
-      }
-
-      // fungsi untuk mengirimkan data ke google sheet
-      const scriptURL = "https://script.google.com/macros/s/AKfycbxCBuyn_RAlmO8PyjfsI72eURllaXvKLRYsFB9G3INdbvREu1idpRjCFLvaUILBLWPO/exec";
-      const form = document.forms["contact-form-myportfolio"];
-      const btnKirim = document.querySelector(".btn-kirim");
-      const btnLoading = document.querySelector(".btn-loading");
-      const alert = document.querySelector(".my-alert");
-
-      form.addEventListener("submit", (e) => {
-        e.preventDefault();
-        // ketika tombol submit diklik
-        // tampilkan tombol loading, hilangkan tombol kirim
-        btnLoading.classList.toggle("d-none");
-        btnKirim.classList.toggle("d-none");
-        fetch(scriptURL, { method: "POST", body: new FormData(form) })
-          .then((response) => {
-            // tampilkan tombol kirim, hilangkan tombol loading
-            btnLoading.classList.toggle("d-none");
-            btnKirim.classList.toggle("d-none");
-            // my alert
-            alert.classList.toggle("d-none");
-            // reset formnya
-            form.reset();
-            console.log("Success!", response);
-          })
-          .catch((error) => console.error("Error!", error.message));
-      });
-
-      // Fungsi mengacak warna navbar
-      const acak1 = document.querySelector(".acakWarna1");
-      const acak2 = document.querySelector(".acakWarna2");
-      const acakTombol1 = document.querySelector(".button1");
-      const acakTombol2 = document.querySelector(".button2");
-      const tombol1 = document.querySelector(".button1");
-
-      tombol1.addEventListener("click", function () {
-        const r = Math.round(Math.random() * 255 + 1);
-        const g = Math.round(Math.random() * 255 + 1);
-        const b = Math.round(Math.random() * 255 + 1);
-        acak1.style.backgroundColor = "rgb(" + r + "," + g + "," + b + ")";
-        acak2.style.backgroundColor = "rgb(" + r + "," + g + "," + b + ")";
-      });
-
-      tombol1.addEventListener("click", function () {
-        const r = Math.round(Math.random() * 255 + 1);
-        const g = Math.round(Math.random() * 255 + 1);
-        const b = Math.round(Math.random() * 255 + 1);
-        acakTombol1.style.backgroundColor = "rgb(" + r + "," + g + "," + b + ")";
-        acakTombol2.style.backgroundColor = "rgb(" + r + "," + g + "," + b + ")";
-      });
-
-      // Fungsi mengembalikan warna navbar ke semula
-      const tombol2 = document.querySelector(".button2");
-      tombol2.addEventListener("click", function () {
-        acak1.style.backgroundColor = "#3b3b3b";
-        acak2.style.backgroundColor = "#3b3b3b";
-        acakTombol1.style.backgroundColor = "#6c757d";
-        acakTombol2.style.backgroundColor = "#6c757d";
-      });
-    </script>
-    <!-- Akhir My Javascript -->
+    <script src="script.js"></script>
 
     <!-- Javascript AOS -->
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
@@ -325,7 +247,6 @@
         once: true,
       });
     </script>
-    <!-- Akhir Javasrript AOS -->
 
     <!-- Javascript GSAP -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/gsap.min.js"></script>
@@ -336,11 +257,9 @@
       gsap.from(".display-4", { duration: 1, y: -20, opacity: 0, delay: 0.8, ease: "back" });
       gsap.from(".lead", { duration: 1, y: -40, opacity: 0, delay: 1, ease: "back" });
     </script>
-    <!-- Akhir Javascript GSAP -->
 
     <!-- Javascript Bootstrap -->
     <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script> -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-    <!-- Akhir Javascript Bootstrap -->
   </body>
 </html>
