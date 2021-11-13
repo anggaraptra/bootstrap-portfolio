@@ -147,9 +147,7 @@
             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
           </div>
           <img class="container-fluid" src="img/YT.jpg" alt="" />
-          <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-          </div>
+          <div class="modal-footer mb-4"></div>
         </div>
       </div>
     </div>
@@ -162,9 +160,7 @@
             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
           </div>
           <img class="container-fluid" src="img/logo1.png" alt="" />
-          <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-          </div>
+          <div class="modal-footer mb-4"></div>
         </div>
       </div>
     </div>
@@ -177,9 +173,7 @@
             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
           </div>
           <img class="container-fluid" src="img/Background.png" alt="" />
-          <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-          </div>
+          <div class="modal-footer mb-4"></div>
         </div>
       </div>
     </div>
@@ -255,6 +249,23 @@
       gsap.from(".img-thumbnail", { duration: 1, y: -60, opacity: 0, delay: 0.5, ease: "power4" });
       gsap.from(".display-4", { duration: 1, y: -20, opacity: 0, delay: 0.8, ease: "back" });
       gsap.from(".lead", { duration: 1, y: -40, opacity: 0, delay: 1, ease: "back" });
+    </script>
+
+    <!-- Vanilla Tilt -->
+    <script src="vanilla-tilt.js"></script>
+    <script>
+      function myFunction(x) {
+        if (x.matches) {
+          VanillaTilt.init(document.querySelectorAll(".card"), {
+            scale: 1.05,
+          });
+        } else {
+        }
+      }
+
+      let x = window.matchMedia("(min-width: 1050px)");
+      myFunction(x);
+      x.addListener(myFunction);
     </script>
 
     <!-- Javascript Bootstrap -->
