@@ -1,12 +1,7 @@
 // menambahkan fungsi untuk menampilkan tulisan ketika diklik
 function value() {
   const status = document.getElementById("status");
-  status.innerHTML = " | CONTENT CREATED";
-}
-
-// menampilkan waktu, posisi ada di bagian footer
-function jam() {
-  document.getElementById("jam").innerHTML = Date();
+  status.innerHTML = " | Content Created";
 }
 
 // fungsi untuk mengirimkan data ke google sheet

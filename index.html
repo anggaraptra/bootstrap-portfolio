@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <link rel="shortcut icon" href="img/poto.png" />
     <title>Portfolio | Anggara Putra</title>
     <!-- Required meta tags -->
     <meta charset="utf-8" />
@@ -18,28 +17,51 @@
 
     <!-- My CSS -->
     <link rel="stylesheet" href="style.css" />
+
+    <!-- ico -->
+    <link rel="apple-touch-icon-precomposed" sizes="57x57" href="ico/apple-touch-icon-57x57.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="ico/apple-touch-icon-114x114.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="ico/apple-touch-icon-72x72.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="ico/apple-touch-icon-144x144.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="60x60" href="ico/apple-touch-icon-60x60.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="120x120" href="ico/apple-touch-icon-120x120.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="76x76" href="ico/apple-touch-icon-76x76.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="ico/apple-touch-icon-152x152.png" />
+    <link rel="icon" type="image/png" href="ico/favicon-196x196.png" sizes="196x196" />
+    <link rel="icon" type="image/png" href="ico/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/png" href="ico/favicon-32x32.png" sizes="32x32" />
+    <link rel="icon" type="image/png" href="ico/favicon-16x16.png" sizes="16x16" />
+    <link rel="icon" type="image/png" href="ico/favicon-128.png" sizes="128x128" />
+    <meta name="application-name" content="&nbsp;"/>
+    <meta name="msapplication-TileColor" content="#FFFFFF" />
+    <meta name="msapplication-TileImage" content="mstile-144x144.png" />
+    <meta name="msapplication-square70x70logo" content="mstile-70x70.png" />
+    <meta name="msapplication-square150x150logo" content="mstile-150x150.png" />
+    <meta name="msapplication-wide310x150logo" content="mstile-310x150.png" />
+    <meta name="msapplication-square310x310logo" content="mstile-310x310.png" />
   </head>
+  
   <body id="home">
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-dark shadow-sm fixed-top acakWarna1" style="background-color: #3b3b3b">
       <div class="container-fluid">
-        <a class="navbar-brand" type="button" onclick="jam()">PORTFOLIO</a>
+        <a href="" class="navbar-brand" type="button"">PORTFOLIO</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav ms-auto">
             <li class="nav-item">
-              <a class="nav-link" aria-current="page" href="#home">HOME</a>
+              <a class="nav-link" aria-current="page" href="#home">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#about">ABOUT</a>
+              <a class="nav-link" href="#about">About</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#gallery">GALLERY</a>
+              <a class="nav-link" href="#gallery">Gallery</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#contact">CONTACT</a>
+              <a class="nav-link" href="#contact">Contact</a>
             </li>
             <li class="nav-item">
               <a class="btn button1"><i class="bi bi-arrow-repeat"></i></a>
@@ -51,27 +73,29 @@
         </div>
       </div>
     </nav>
+    <!-- Akhir Navbar -->
 
     <!-- Jumbotron -->
     <section class="jumbotron text-center">
       <img src="img/anggaraptra.png" alt="My Foto" width="200" class="rounded-circle img-thumbnail shadow" />
       <div>
-        <h1 class="display-4">ANGGARA PUTRA</h1>
+        <h1 class="display-4">Anggara Putra</h1>
       </div>
       <div class="nama">
-        <p class="lead" type="button" onclick="value()"><span>STUDENT</span><a id="status"></a></p>
+        <p class="lead" type="button" onclick="value()"><span>Student</span><a id="status"></a></p>
       </div>
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
         <path fill="#ffffff" fill-opacity="1" d="M0,224L120,202.7C240,181,480,139,720,138.7C960,139,1200,181,1320,202.7L1440,224L1440,320L1320,320C1200,320,960,320,720,320C480,320,240,320,120,320L0,320Z"></path>
       </svg>
     </section>
+    <!-- Akhir Jumbotron -->
 
     <!-- About -->
     <section id="about">
       <div class="container">
         <div class="row text-center mb-4">
           <div class="col">
-            <h2>ABOUT</h2>
+            <h2>About</h2>
           </div>
         </div>
         <div class="row justify-content-center fs-5 text-center">
@@ -91,17 +115,23 @@
         ></path>
       </svg>
     </section>
+    <!-- Akhir About -->
 
     <!-- Gallery -->
     <section id="gallery">
-      <div class="container-fluid">
+    <div class="container-fluid">
+        <div class="row text-center mb-1">
+          <div class="col">
+            <h2>Gallery</h2>
+          </div>
+        </div>
         <div class="row text-center mb-4">
           <div class="col">
-            <h2>GALLERY</h2>
+            <h4>Youtube</h4>
           </div>
         </div>
         <div class="row">
-          <div class="col-md-4 mb-3" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
+          <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
             <div class="card">
               <img src="img/myyt.jpg" class="card-img-top" data-bs-toggle="modal" data-bs-target="#myYoutube" alt="Foto1" />
               <div class="card-body">
@@ -111,7 +141,7 @@
               </div>
             </div>
           </div>
-          <div class="col-md-4 mb-3" data-aos="zoom-in" data-aos-duration="1000">
+          <div class="col-md-4 mb-4" data-aos="zoom-in" data-aos-duration="1000">
             <div class="card">
               <img src="img/logo2.png" class="card-img-top" data-bs-toggle="modal" data-bs-target="#logo" alt="Foto2" />
               <div class="card-body">
@@ -119,7 +149,7 @@
               </div>
             </div>
           </div>
-          <div class="col-md-4 mb-3" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
+          <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
             <div class="card">
               <img src="img/Background.png" class="card-img-top" data-bs-toggle="modal" data-bs-target="#background" alt="Foto3" />
               <div class="card-body">
@@ -128,6 +158,31 @@
             </div>
           </div>
         </div>
+
+        <div class="row text-center mt-2 mb-4">
+          <div class="col">
+            <h4>Project</h4>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-md-6 col-lg-4 mb-4">
+            <div class="box">
+              <h5 class="name">.....</h5>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4 mb-4">
+            <div class="box">
+              <h5 class="name">.....</h5>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4 mb-4">
+            <div class="box">
+              <h5 class="name">.....</h5>
+            </div>
+          </div>
+        </div>
+
       </div>
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
         <path
@@ -138,10 +193,9 @@
       </svg>
     </section>
 
-    <!-- Pop Up Gallery -->
-    <!--MyYoutube-->
+    <!-- Modal Gallery -->
     <div class="container-fluid modal fade" id="myYoutube" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-      <div class="modal-dialog">
+      <div class="modal-dialog modal-lg">
         <div class="modal-content">
           <div class="modal-header">
             <h5 class="modal-title" id="exampleModalLabel">Youtube Channel</h5>
@@ -152,7 +206,6 @@
         </div>
       </div>
     </div>
-    <!--Logo-->
     <div class="container-fluid modal fade" id="logo" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
       <div class="modal-dialog">
         <div class="modal-content">
@@ -160,14 +213,13 @@
             <h5 class="modal-title" id="exampleModalLabel">Logo</h5>
             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
           </div>
-          <img class="container-fluid" src="img/logo1.png" alt="" />
+          <img class="container-fluid" src="img/logo 3.png" alt="" />
           <div class="modal-footer mb-4"></div>
         </div>
       </div>
     </div>
-    <!--Background-->
     <div class="container-fluid modal fade" id="background" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-      <div class="modal-dialog">
+      <div class="modal-dialog modal-lg">
         <div class="modal-content">
           <div class="modal-header">
             <h5 class="modal-title" id="exampleModalLabel">Background</h5>
@@ -178,13 +230,14 @@
         </div>
       </div>
     </div>
+    <!-- Akhir Gallery -->
 
     <!-- Contact -->
     <section id="contact">
       <div class="container-fluid pb-5">
         <div class="row text-center mb-3">
           <div class="col">
-            <h2>CONTACT</h2>
+            <h2>Contact</h2>
           </div>
         </div>
         <div class="row justify-content-center">
@@ -220,6 +273,7 @@
         </div>
       </div>
     </section>
+    <!-- Akhir Contact -->
 
     <!-- Footer -->
     <footer class="text-white text-center pb-5 pt-5 acakWarna2" style="background-color: #3b3b3b">
@@ -228,11 +282,11 @@
         <a href="https://www.instagram.com/anggara.ptra/" target="_blank" class="fw-bold" data-aos="fade-up" data-aos-duration="1000">AnggaraPutra</a>
       </p>
       <p>Thanks for Checking |<b> Copyright @2021</b></p>
-      <p id="jam"></p>
     </footer>
+    <!-- Akhir Footer -->
 
     <!-- My Javascript -->
-    <script src="script.js"></script>
+    <script src="js/script.js"></script>
 
     <!-- Javascript AOS -->
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
@@ -253,12 +307,13 @@
     </script>
 
     <!-- Vanilla Tilt -->
-    <script src="vanilla-tilt.js"></script>
+    <script src="js/vanilla-tilt.js"></script>
     <script>
       function myFunction(x) {
         if (x.matches) {
           VanillaTilt.init(document.querySelectorAll(".card"), {
-            scale: 1.05,
+            scale: 1.03,
+            glare: true,
           });
         } else {
         }
