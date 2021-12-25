@@ -311,18 +311,18 @@
     <!-- Vanilla Tilt -->
     <script src="js/vanilla-tilt.js"></script>
     <script>
-      VanillaTilt.init(document.querySelectorAll(".card"), {
-        scale: 1.03,
-        glare: true,
-      });
-
-      // function myFunction(x) {
-      //   if (x.matches) {} 
-      //   else {}
-      // }
-      // let x = window.matchMedia("(min-width: 1050px)");
-      // myFunction(x);
-      // x.addListener(myFunction);
+      function myFunction(x) {
+        if (x.matches) {
+          VanillaTilt.init(document.querySelectorAll(".card"), {
+            scale: 1.03,
+            glare: true,
+          });
+        } 
+        else {}
+      }
+      let x = window.matchMedia("(min-width: 1050px)");
+      myFunction(x);
+      x.addListener(myFunction);
     </script>
 
     <!-- Javascript Bootstrap -->
