@@ -12,10 +12,10 @@
   background-color: #e2edff;
 }
 
-.jumbotron .nama .lead {
+/* .jumbotron .nama .lead {
   mix-blend-mode: color-burn;
   color: rgb(0, 107, 207);
-}
+} */
 
 /* Navbar */
 .container .nav-item .nav-link:hover::after {
@@ -39,12 +39,10 @@
   margin-top: 1px;
   margin-left: 8.5px;
 }
+
 .navbar-nav .nav-item .btn.button1:hover {
   color: #ffff;
   background: #6c757d;
-  /* box-shadow: 0 0 10px #ffff, 0 0 10px #ffff, 0 0 20px #ffff; */
-  /* background-color: rgb(255, 255, 255); */
-  /* border: solid rgb(255, 255, 255); */
 }
 
 /* Button2 */
@@ -56,10 +54,10 @@
   margin-top: 1px;
   margin-left: 9.5px;
 }
+
 .navbar-nav .nav-item .btn.button2:hover {
   color: #ffff;
   background: #6c757d;
-  /* box-shadow: 0 0 10px #ffff, 0 0 10px #ffff, 0 0 20px #ffff; */
 }
 
 /* Gallery */
@@ -87,13 +85,9 @@ footer p a {
 }
 
 footer p a:hover {
-  color: #0dcaf0;
-  text-shadow: 1px 1px 3px black;
+  color: white;
 }
 
 .modal .modal-dialog .modal-content img {
   margin: auto;
 }
-
-/* color navbar default */
-/* #2e4eff */
