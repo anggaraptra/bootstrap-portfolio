@@ -30,35 +30,3 @@ form.addEventListener("submit", (e) => {
     })
     .catch((error) => console.error("Error!", error.message));
 });
-
-// Fungsi mengacak warna navbar
-const acak1 = document.querySelector(".acakWarna1");
-const acak2 = document.querySelector(".acakWarna2");
-const acakTombol1 = document.querySelector(".button1");
-const acakTombol2 = document.querySelector(".button2");
-const tombol1 = document.querySelector(".button1");
-
-tombol1.addEventListener("click", function () {
-  const r = Math.round(Math.random() * 255 + 1);
-  const g = Math.round(Math.random() * 255 + 1);
-  const b = Math.round(Math.random() * 255 + 1);
-  acak1.style.backgroundColor = "rgb(" + r + "," + g + "," + b + ")";
-  acak2.style.backgroundColor = "rgb(" + r + "," + g + "," + b + ")";
-});
-
-tombol1.addEventListener("click", function () {
-  const r = Math.round(Math.random() * 255 + 1);
-  const g = Math.round(Math.random() * 255 + 1);
-  const b = Math.round(Math.random() * 255 + 1);
-  acakTombol1.style.backgroundColor = "rgb(" + r + "," + g + "," + b + ")";
-  acakTombol2.style.backgroundColor = "rgb(" + r + "," + g + "," + b + ")";
-});
-
-// Fungsi mengembalikan warna navbar ke semula
-const tombol2 = document.querySelector(".button2");
-tombol2.addEventListener("click", function () {
-  acak1.style.backgroundColor = "#3b3b3b";
-  acak2.style.backgroundColor = "#3b3b3b";
-  acakTombol1.style.backgroundColor = "#6c757d";
-  acakTombol2.style.backgroundColor = "#6c757d";
-});
