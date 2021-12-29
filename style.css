@@ -45,7 +45,7 @@
   background: #6c757d;
 }
 
-/* Button2 */
+/* Button 2 */
 .navbar-nav .nav-item .btn.button2 {
   color: #ffffff;
   background-color: #6c757d;
@@ -63,6 +63,10 @@
 /* Gallery */
 #gallery {
   background-color: #e2edff;
+}
+
+.modal .modal-dialog .modal-content img {
+  margin: auto;
 }
 
 /* Section */
@@ -86,8 +90,4 @@ footer p a {
 
 footer p a:hover {
   color: white;
-}
-
-.modal .modal-dialog .modal-content img {
-  margin: auto;
 }
