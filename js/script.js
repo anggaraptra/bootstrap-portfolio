@@ -1,7 +1,7 @@
 // menambahkan fungsi untuk menampilkan tulisan ketika diklik
 function value() {
   const status = document.getElementById("status");
-  status.innerHTML = " | Content Created";
+  status.innerHTML = " | Content Created | Programmer";
 }
 
 // fungsi untuk mengirimkan data ke google sheet
@@ -29,4 +29,25 @@ form.addEventListener("submit", (e) => {
       console.log("Success!", response);
     })
     .catch((error) => console.error("Error!", error.message));
+});
+
+// Navbar active
+const sections = document.querySelectorAll("section");
+const navLi = document.querySelectorAll("nav .container ul li a");
+
+window.addEventListener("scroll", () => {
+  let current = "";
+  sections.forEach((section) => {
+    const sectionTop = section.offsetTop;
+    const sectionHeight = section.clientHeight;
+    if (pageYOffset >= sectionTop - sectionHeight / 3) {
+      current = section.getAttribute("id");
+    }
+  });
+  navLi.forEach((li) => {
+    li.classList.remove("active");
+    if (li.classList.contains(current)) {
+      li.classList.add("active");
+    }
+  });
 });

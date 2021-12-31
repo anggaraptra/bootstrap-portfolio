@@ -41,9 +41,9 @@
     <meta name="msapplication-square310x310logo" content="mstile-310x310.png" />
   </head>
   
-  <body id="home">
+  <body>
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-dark shadow-sm fixed-top" style="background-color: #3b3b3b">
+    <nav id="topNav" class="navbar navbar-expand-lg navbar-dark shadow-sm fixed-top">
       <div class="container">
         <a class="navbar-brand" type="button"">PORTFOLIO</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -52,16 +52,19 @@
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav ms-auto">
             <li class="nav-item">
-              <a class="nav-link" aria-current="page" href="#home">Home</a>
+              <a class="nav-link home active" aria-current="page" href="#home">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#about">About</a>
+              <a class="nav-link about" href="#about">About</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#gallery">Gallery</a>
+              <a class="nav-link gallery" href="#gallery">Gallery</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#contact">Contact</a>
+              <a class="nav-link skills" href="#skills">Skills</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link contact" href="#contact">Contact</a>
             </li>
           </ul>
         </div>
@@ -70,36 +73,13 @@
     <!-- Akhir Navbar -->
 
     <!-- Jumbotron -->
-    <section class="jumbotron text-center">
-      <img src="img/anggaraptra.png" alt="My Foto" width="200" class="my-thumbnail rounded-circle img-thumbnail shadow" />
+    <section id="home" class="jumbotron text-center">
+      <img src="img/anggaraptra.png" alt="portfolio" width="200" class="my-thumbnail rounded-circle img-thumbnail shadow" />
       <div>
         <h1 class="display-4">Anggara Putra</h1>
       </div>
-      <div class="nama">
+      <div class="status">
         <p class="lead" type="button" onclick="value()"><span>Student</span><a id="status"></a></p>
-      </div>
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-        <path fill="#ffffff" fill-opacity="1" d="M0,224L120,202.7C240,181,480,139,720,138.7C960,139,1200,181,1320,202.7L1440,224L1440,320L1320,320C1200,320,960,320,720,320C480,320,240,320,120,320L0,320Z"></path>
-      </svg>
-    </section>
-    <!-- Akhir Jumbotron -->
-
-    <!-- About -->
-    <section id="about">
-      <div class="container-fluid">
-        <div class="row text-center mb-4">
-          <div class="col">
-            <h2>About</h2>
-          </div>
-        </div>
-        <div class="row about justify-content-center text-center">
-          <div class="col-md-4" data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="100">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae quos voluptatum laudantium, dolorum in dolorem voluptates accusantium dignissimos delectus neque.</p>
-          </div>
-          <div class="col-md-4" data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="100">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At dolorum nemo hic molestiae accusantium numquam fugit necessitatibus rerum corporis explicabo?</p>
-          </div>
-        </div>
       </div>
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
         <path
@@ -109,93 +89,102 @@
         ></path>
       </svg>
     </section>
+    <!-- Akhir Jumbotron -->
+
+    <!-- About -->
+    <section id="about">
+      <div class="container">
+        <div class="row text-center mb-3">
+          <div class="col">
+            <h2 class="fw-bold">About Me</h2>
+          </div>
+        </div>
+        <div class="row justify-content-center">
+          <div class="col-md-6 about-text" data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="100">
+            <p>Hola, i'm Anggara Putra</p>
+            <p>I'm a beginner in learning several Programming Languages like HTML, CSS, Javascript, PHP, Java, and can some tools to edit videos, photos and graphics.</p>
+          </div>
+          <div class="col-md-1"></div>
+          <div class="col-md-5" data-aos="zoom-up" data-aos-duration="1000" data-aos-delay="100">
+            <div id="carousel" class="carousel carousel-dark slide" data-bs-ride="carousel">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="img/kursus js.png" class="d-block w-100 img-fluid">
+                </div>
+                <div class="carousel-item">
+                  <img src="img/kursus react.png" class="d-block w-100 img-fluid">
+                </div>
+                <div class="carousel-item">
+                  <img src="img/kursus nodejs.png" class="d-block w-100 img-fluid">
+                </div>
+                <div class="carousel-item">
+                  <img src="img/kursus php.png" class="d-block w-100 img-fluid">
+                </div>
+                <div class="carousel-item">
+                  <img src="img/kursus python.png" class="d-block w-100 img-fluid">
+                </div>
+                <div class="carousel-item">
+                  <img src="img/kursus java.png" class="d-block w-100 img-fluid">
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+        <path
+          fill="#ffff"
+          fill-opacity="1"
+          d="M0,128L80,149.3C160,171,320,213,480,202.7C640,192,800,128,960,112C1120,96,1280,128,1360,144L1440,160L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z"
+        ></path>
+      </svg>
+    </section>
     <!-- Akhir About -->
 
     <!-- Gallery -->
     <section id="gallery">
-    <div class="container-fluid">
-        <div class="row text-center mb-2">
+      <div class="container">
+        <div class="row text-center mb-3">
           <div class="col">
-            <h2>Gallery</h2>
+            <h2 class="fw-bold">Gallery</h2>
           </div>
         </div>
-      
+
         <!-- Project -->
         <div class="row text-center mb-3">
           <div class="col">
             <h4>Project</h4>
           </div>
         </div>
-        <div class="row text-center mb-5">
-          <div class="col-md-4" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
+        <div class="row mb-5">
+          <div class="col-md-6" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
             <div class="card">
-              <img src="img/poto.png" class="card-img-top" data-bs-toggle="modal" data-bs-target="#project1" alt="" />
+              <img src="img/project1.jpg" class="card-img-top img-fluid" data-bs-toggle="modal" data-bs-target="#project1" alt="" />
               <div class="card-body">
-                <p class="card-text">
-                  <a href="https://www.youtube.com/channel/UCKFOvyfaq4FyhRfnlAhwSFA" target="_blank" style="text-decoration: none; color: black">Project 1</a>
-                </p>
+                <p class="card-text">Project 1</p>
               </div>
             </div>
           </div>
-          <div class="col-md-4" data-aos="zoom-in" data-aos-duration="1000">
+          <div class="col-md-6" data-aos="zoom-up" data-aos-duration="1000" data-aos-delay="200">
             <div class="card">
-              <img src="img/poto.png" class="card-img-top" data-bs-toggle="modal" data-bs-target="#project2" alt="" />
+              <img src="img/project2.png" class="card-img-top img-fluid" data-bs-toggle="modal" data-bs-target="#project2" alt="" />
               <div class="card-body">
                 <p class="card-text">Project 2</p>
               </div>
             </div>
           </div>
-          <div class="col-md-4" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
-            <div class="card">
-              <img src="img/poto.png" class="card-img-top" data-bs-toggle="modal" data-bs-target="#project3" alt="" />
-              <div class="card-body">
-                <p class="card-text">Project 3</p>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Skills -->
-        <div class="row text-center mb-3">
-          <div class="col">
-            <h4>Skills</h4>
-          </div>
-        </div>
-        <div class="row text-center mb-5">
-          <div class="col-md-3 html">
-            <img src="" alt="">
-          </div>
-          <div class="col-md-3 css">
-            <img src="" alt="">
-          </div>
-          <div class="col-md-3 js">
-            <img src="" alt="">
-          </div>
-          <div class="col-md-3 php">
-            <img src="" alt="">
-          </div>
-        </div>
-
-        <!-- Tools -->
-        <div class="row text-center mb-3">
-          <div class="col">
-            <h4>Tools</h4>
-          </div>
-        </div>
-        <div class="row text-center mb-5">
-          <div class="col-md-4">
-            <img src="" alt="">
-          </div>
-          <div class="col-md-4">
-            <img src="" alt="">
-          </div>
-          <div class="col-md-4">
-            <img src="" alt="">
-          </div>
         </div>
 
         <!-- Social Media -->
-        <div class="row text-center mb-3">
+        <!-- <div class="row text-center mb-3">
           <div class="col">
             <h4>Social Media</h4>
           </div>
@@ -206,16 +195,9 @@
               <h5 class="name"></h5>
             </div>
           </div>
-        </div>
-        
+        </div> -->
+
       </div>
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-        <path
-          fill="#ffffff"
-          fill-opacity="1"
-          d="M0,128L80,149.3C160,171,320,213,480,202.7C640,192,800,128,960,112C1120,96,1280,128,1360,144L1440,160L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z"
-        ></path>
-      </svg>
     </section>
 
     <!-- Modal Gallery -->
@@ -226,7 +208,7 @@
             <h5 class="modal-title" id="exampleModalLabel">Project 1</h5>
             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
           </div>
-          <img class="container-fluid" src="img/poto.png" alt="" />
+          <img class="img-fluid" src="img/project1.jpg" alt="" />
           <div class="modal-footer mb-4"></div>
         </div>
       </div>
@@ -238,37 +220,63 @@
             <h5 class="modal-title" id="exampleModalLabel">Project 2</h5>
             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
           </div>
-          <img class="container-fluid" src="img/poto.png" alt="" />
-          <div class="modal-footer mb-4"></div>
-        </div>
-      </div>
-    </div>
-    <div class="container-fluid modal fade" id="project3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-      <div class="modal-dialog modal-lg">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="exampleModalLabel">Project 3</h5>
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-          </div>
-          <img class="container-fluid" src="img/poto.png" alt="" />
+          <img class="img-fluid" src="img/project2.png" alt="" />
           <div class="modal-footer mb-4"></div>
         </div>
       </div>
     </div>
     <!-- Akhir Gallery -->
 
-    <!-- Contact -->
-    <section id="contact">
-      <div class="container-fluid pb-5">
+    <!-- Skills -->
+    <section id="skills">
+      <div class="container">
         <div class="row text-center mb-3">
           <div class="col">
-            <h2>Contact</h2>
+            <h2 class="fw-bold">Skills</h2>
+          </div>
+        </div>
+        <div class="row mb-5">
+          <div class="col-md-3 mb-3">
+            <div class="lang html">
+              <h4 class="html-text">HTML</h4>
+              <img src="img/html-logo.png" class="img-html" alt="html">
+            </div>
+          </div>
+          <div class="col-md-3 mb-3">
+            <div class="lang css">
+              <h4 class="css-text">CSS</h4>
+              <img src="img/css-logo.png" class="img-css" alt="css">
+            </div>
+          </div>
+          <div class="col-md-3 mb-3">
+            <div class="lang js">
+              <h4 class="js-text">ES6</h4>
+              <img src="img/js-logo.png" class="img-js" alt="js">
+            </div>
+          </div>
+          <div class="col-md-3 mb-3">
+            <div class="lang php">
+              <h4 class="php-text">PHP</h4>
+              <img src="img/php-logo.png" class="img-php" alt="php">
+            </div>
+          </div>
+        </div>
+      </div>  
+    </section>
+    <!-- Akhir Skills -->
+
+    <!-- Contact -->
+    <section id="contact">
+      <div class="container pb-5">
+        <div class="row text-center mb-3">
+          <div class="col">
+            <h2 class="fw-bold">Contact</h2>
           </div>
         </div>
         <div class="row justify-content-center">
           <div class="col-md-6">
-            <div class="alert alert-info alert-dismissible fade show d-none my-alert" role="alert">
-              <strong>Thank you |</strong> Pesan anda sudah kami terima!
+            <div class="alert alert-secondary alert-dismissible fade show d-none my-alert" role="alert">
+              <strong>Thank you |</strong> We have received your message!
               <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
             </div>
             <form name="contact-form-myportfolio" id="myForm">
@@ -301,7 +309,7 @@
     <!-- Akhir Contact -->
 
     <!-- Footer -->
-    <footer class="container-fluid text-white text-center pb-5 pt-5" style="background-color: #3b3b3b">
+    <footer class="container-fluid text-white text-center pb-5 pt-5">
       <p class="akunig">
         Created with <i class="bi bi-person-check-fill"></i> by
         <a href="https://www.instagram.com/anggara.ptra/" target="_blank" class="fw-bold" data-aos="fade-up" data-aos-duration="1000">AnggaraPutra</a>
@@ -336,8 +344,16 @@
     <script>
       function myFunction(x) {
         if (x.matches) {
+          VanillaTilt.init(document.querySelectorAll(".lang"), {
+            scale: 1.05,
+            max: 10,
+          });
+          VanillaTilt.init(document.querySelectorAll(".lang-lg"), {
+            scale: 1.05,
+            max: 10,
+          });
           VanillaTilt.init(document.querySelectorAll(".card"), {
-            scale: 1.02,
+            scale: 1.03,
             max: 10,
             glare: true,
           });
