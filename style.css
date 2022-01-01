@@ -42,7 +42,7 @@ nav {
 }
 
 #carousel .carousel-inner .carousel-item img {
-  border-radius: 50px;
+  border-radius: 20px;
 }
 
 /* Gallery */
@@ -63,7 +63,7 @@ nav {
 .lang {
   position: relative;
   background-color: #3b3b3b;
-  border-radius: 10px;
+  border-radius: 20px;
   height: 350px;
   transform-style: preserve-3d;
 }
@@ -74,7 +74,7 @@ nav {
   color: #ffff;
   font-size: 4em;
   font-weight: bold;
-  font-style: italic;
+  /* font-style: italic; */
   left: 50%;
   transform: translate(-50%, 0);
   opacity: 0;
@@ -82,7 +82,7 @@ nav {
 }
 
 .html:hover .html-text {
-  transform: translate3d(-50%, 60%, 30px);
+  transform: translate3d(-50%, 60%, 30px) scale(1.05);
   opacity: 1;
 }
 
@@ -96,7 +96,7 @@ nav {
 }
 
 .lang:hover .img-html {
-  transform: translate3d(-50%, -30%, 50px) scale(1.05);
+  transform: translate3d(-50%, -30%, 50px) scale(1.1);
 }
 
 /* css */
@@ -105,7 +105,7 @@ nav {
   color: #ffff;
   font-size: 4em;
   font-weight: bold;
-  font-style: italic;
+  /* font-style: italic; */
   left: 50%;
   transform: translate(-50%, 0);
   opacity: 0;
@@ -113,7 +113,7 @@ nav {
 }
 
 .css:hover .css-text {
-  transform: translate3d(-50%, 60%, 30px);
+  transform: translate3d(-50%, 60%, 30px) scale(1.05);
   opacity: 1;
 }
 
@@ -127,7 +127,7 @@ nav {
 }
 
 .lang:hover .img-css {
-  transform: translate3d(-50%, -30%, 50px) scale(1.05);
+  transform: translate3d(-50%, -30%, 50px) scale(1.1);
 }
 
 /* javascript */
@@ -136,7 +136,7 @@ nav {
   color: #ffff;
   font-size: 4em;
   font-weight: bold;
-  font-style: italic;
+  /* font-style: italic; */
   left: 50%;
   transform: translate(-50%, 0);
   opacity: 0;
@@ -144,7 +144,7 @@ nav {
 }
 
 .js:hover .js-text {
-  transform: translate3d(-50%, 60%, 30px);
+  transform: translate3d(-50%, 60%, 30px) scale(1.05);
   opacity: 1;
 }
 
@@ -158,7 +158,7 @@ nav {
 }
 
 .lang:hover .img-js {
-  transform: translate3d(-50%, -30%, 50px) scale(1.05);
+  transform: translate3d(-50%, -30%, 50px) scale(1.1);
 }
 
 /* php */
@@ -167,7 +167,7 @@ nav {
   color: #ffff;
   font-size: 4em;
   font-weight: bold;
-  font-style: italic;
+  /* font-style: italic; */
   left: 50%;
   transform: translate(-50%, 0);
   opacity: 0;
@@ -175,7 +175,7 @@ nav {
 }
 
 .php:hover .php-text {
-  transform: translate3d(-50%, 60%, 30px);
+  transform: translate3d(-50%, 60%, 30px) scale(1.05);
   opacity: 1;
 }
 
@@ -189,7 +189,7 @@ nav {
 }
 
 .lang:hover .img-php {
-  transform: translate3d(-50%, -30%, 50px) scale(1.05);
+  transform: translate3d(-50%, -30%, 50px) scale(1.1);
 }
 
 /* Section */
