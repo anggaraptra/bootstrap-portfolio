@@ -25,6 +25,11 @@ nav {
   color: #ffff;
 }
 
+/* Section */
+section .card-body .card-text {
+  text-align: center;
+}
+
 /* Jumbotron */
 .jumbotron {
   padding-top: 6rem;
@@ -54,7 +59,7 @@ nav {
   margin: auto;
 }
 
-/* skill */
+/* Skill */
 #skills {
   padding-top: 4rem;
 }
@@ -186,11 +191,6 @@ nav {
 
 .lang:hover .img-php {
   transform: translate3d(-50%, -30%, 50px) scale(1.1);
-}
-
-/* Section */
-section .card-body .card-text {
-  text-align: center;
 }
 
 /* Contact */
