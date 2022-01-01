@@ -208,15 +208,20 @@ footer .akunig a {
   color: #ffff;
 }
 
+footer .akunig i:hover {
+  color: #000;
+}
+
 footer .akunig a:hover {
   color: #000;
 }
 
-footer p span {
-  color: #000;
+footer p b a {
+  text-decoration: none;
+  color: #fff;
   font-weight: bolder;
 }
 
-footer .akunig i:hover {
+footer p b a:hover {
   color: #000;
 }
