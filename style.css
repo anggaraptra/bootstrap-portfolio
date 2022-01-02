@@ -59,6 +59,20 @@ section .card-body .card-text {
   margin: auto;
 }
 
+#project1 .modal-footer a {
+  text-decoration: none;
+  margin-bottom: -20px;
+  color: #000;
+}
+
+#project1 .modal-footer a:hover {
+  font-weight: bold;
+}
+
+#project1 .modal-footer a:hover::after {
+  content: " → ";
+}
+
 /* Skill */
 #skills {
   padding-top: 4rem;
