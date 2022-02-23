@@ -46,8 +46,25 @@ section .card-body .card-text {
   font-size: 28px;
 }
 
+#about .about-text a {
+  margin-top: 22px;
+}
+
+#about .about-text .btn {
+  background-color: #3b3b3b;
+  color: #fff;
+  border-radius: 10px;
+  width: 80px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+#about .about-text .btn:hover {
+  opacity: 0.7;
+}
+
 #carousel .carousel-inner .carousel-item img {
-  border-radius: 20px;
+  border-radius: 10px;
 }
 
 /* Gallery */
