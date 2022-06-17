@@ -11,16 +11,6 @@ nav {
   background-color: #3b3b3b;
 }
 
-/* .container .nav-item .nav-link:hover::after {
-  content: "";
-  color: #ffff;
-  display: block;
-  border-top: 1px solid #ffffff;
-  border-radius: 50%;
-  margin: auto;
-  margin-bottom: -1px;
-} */
-
 .container .nav-item .nav-link:hover {
   color: #ffff;
 }
@@ -76,17 +66,23 @@ section .card-body .card-text {
   margin: auto;
 }
 
-#project1 .modal-footer a {
+#project1 .modal-footer a,
+#project2 .modal-footer a,
+#project3 .modal-footer a {
   text-decoration: none;
   margin-bottom: -20px;
   color: #000;
 }
 
-#project1 .modal-footer a:hover {
+#project1 .modal-footer a:hover,
+#project2 .modal-footer a:hover,
+#project3 .modal-footer a:hover {
   font-weight: bold;
 }
 
-#project1 .modal-footer a:hover::after {
+#project1 .modal-footer a:hover::after,
+#project2 .modal-footer a:hover::after,
+#project3 .modal-footer a:hover::after {
   content: " → ";
 }
 
