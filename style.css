@@ -6,11 +6,6 @@
   font-family: "Open Sans", sans-serif;
 }
 
-/* Navbar */
-nav {
-  background-color: #3b3b3b;
-}
-
 .container .nav-item .nav-link:hover {
   color: #ffff;
 }
@@ -41,7 +36,7 @@ section .card-body .card-text {
 }
 
 #about .about-text .btn {
-  background-color: #3b3b3b;
+  background-color: #0d6efd;
   color: #fff;
   border-radius: 10px;
   width: 80px;
@@ -94,7 +89,7 @@ section .card-body .card-text {
 /* lang */
 .lang {
   position: relative;
-  background-color: #3b3b3b;
+  background-color: #0d6efd;
   border-radius: 20px;
   height: 350px;
   transform-style: preserve-3d;
@@ -226,10 +221,6 @@ section .card-body .card-text {
 }
 
 /* Footer */
-footer {
-  background-color: #3b3b3b;
-}
-
 footer .akunig a {
   text-decoration: none;
   color: #ffff;
@@ -240,7 +231,7 @@ footer .akunig i:hover {
 }
 
 footer .akunig a:hover {
-  color: #000;
+  color: rgb(255, 0, 0);
 }
 
 footer p b a {
